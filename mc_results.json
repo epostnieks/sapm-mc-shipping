@@ -1,0 +1,141 @@
+{
+  "paper_id": "shipping",
+  "config_file": "pipeline/mc_configs/shipping.json",
+  "seed": 42,
+  "n_draws": 100000,
+  "n_channels": 6,
+  "correlation_rho": 0.3,
+  "private_payoff_B": 969.0,
+  "beta_w": {
+    "median": 1.34,
+    "mean": 1.35,
+    "std": 0.14,
+    "p1": 1.06,
+    "p5": 1.13,
+    "p95": 1.59,
+    "p99": 1.71,
+    "ci_90": [
+      1.1,
+      1.6
+    ],
+    "ci_99": [
+      1.1,
+      1.7
+    ],
+    "p_below_1": 0.00187,
+    "p_below_1_pct": "0.1870%"
+  },
+  "impossibility_floor": {
+    "floor_value": 0.8,
+    "p_below_floor": 0.0,
+    "p_below_floor_pct": "0.0000%"
+  },
+  "welfare_cost": {
+    "total_median_B": 1299.8,
+    "total_mean_B": 1306.6,
+    "total_p5_B": 1097.6,
+    "total_p95_B": 1540.0
+  },
+  "pi_sa": {
+    "median_B": 330.8,
+    "mean_B": 337.6,
+    "p5_B": 128.6,
+    "p95_B": 571.0
+  },
+  "channel_statistics": {
+    "C1_co2_climate_damages": {
+      "median": 189.8,
+      "mean": 191.8,
+      "p5": 150.2,
+      "p95": 239.8,
+      "std": 27.4
+    },
+    "C2_air_pollution_mortality": {
+      "median": 813.7,
+      "mean": 820.4,
+      "p5": 662.1,
+      "p95": 1001.5,
+      "std": 103.4
+    },
+    "C3_scrubber_ecotoxicity": {
+      "median": 65.0,
+      "mean": 65.5,
+      "p5": 52.8,
+      "p95": 80.0,
+      "std": 8.3
+    },
+    "C4_invasive_species": {
+      "median": 81.0,
+      "mean": 82.0,
+      "p5": 62.4,
+      "p95": 104.9,
+      "std": 13.1
+    },
+    "C5_underwater_noise": {
+      "median": 17.5,
+      "mean": 17.9,
+      "p5": 12.3,
+      "p95": 24.9,
+      "std": 3.9
+    },
+    "C6_governance_failure": {
+      "median": 126.9,
+      "mean": 129.0,
+      "p5": 94.9,
+      "p95": 170.0,
+      "std": 23.0
+    }
+  },
+  "sensitivity_matrix": [
+    {
+      "vsl_multiplier": 0.5,
+      "values": {
+        "dc_0pct": 0.92,
+        "dc_10pct": 0.82,
+        "dc_20pct": 0.73,
+        "dc_30pct": 0.64,
+        "dc_40pct": 0.55
+      }
+    },
+    {
+      "vsl_multiplier": 0.75,
+      "values": {
+        "dc_0pct": 1.13,
+        "dc_10pct": 1.01,
+        "dc_20pct": 0.9,
+        "dc_30pct": 0.79,
+        "dc_40pct": 0.68
+      }
+    },
+    {
+      "vsl_multiplier": 1.0,
+      "values": {
+        "dc_0pct": 1.34,
+        "dc_10pct": 1.2,
+        "dc_20pct": 1.07,
+        "dc_30pct": 0.94,
+        "dc_40pct": 0.8
+      }
+    },
+    {
+      "vsl_multiplier": 1.25,
+      "values": {
+        "dc_0pct": 1.55,
+        "dc_10pct": 1.39,
+        "dc_20pct": 1.24,
+        "dc_30pct": 1.08,
+        "dc_40pct": 0.93
+      }
+    },
+    {
+      "vsl_multiplier": 1.5,
+      "values": {
+        "dc_0pct": 1.76,
+        "dc_10pct": 1.58,
+        "dc_20pct": 1.4,
+        "dc_30pct": 1.23,
+        "dc_40pct": 1.05
+      }
+    }
+  ]
+}
